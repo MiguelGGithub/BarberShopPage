@@ -1,0 +1,1782 @@
+body{
+     /*PLEASE REMOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOVE AFTER DONE*/
+    background-color: rgba(242,242,242,255);
+}
+img{
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+}
+*, *::before, *::after{
+    box-sizing: border-box; 
+    font-weight: normal;
+    padding: 0; 
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+.HFM{
+    display: none;
+}
+button:hover{
+    cursor: pointer;
+}
+/**************************
+HEADER
+*************************/
+header{
+    background: white;
+    padding-bottom: 30rem;
+    background-size: 160%;
+    background-position: 0rem 5rem;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, rgba(184, 184, 184, 0.2),
+    rgba(51, 51, 51, 0.7)), url('pictures/barberheader.jpg');
+}
+header li{
+    list-style: none;
+}
+header a{
+    color: black;
+    text-decoration: none;
+}
+.nav-menu a:hover{
+    color: #b08444;
+}
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    background: white;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+.nav-menu{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+header nav > span{
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+}
+.nav-link{
+    transition: 0.7s ease;
+}
+.hamburger{
+    display: block;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+.nav-menu{
+    position: fixed;
+    Left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    padding-bottom: 11rem;
+    height: 100%;
+}
+.nav-item{
+    margin: 16px 0;
+    margin-left: 1.3rem;
+    font-size: 1.3rem;
+}
+.nav-menu.active{
+    Left: 0;
+}
+.nav-menu button{
+    margin-top: -1rem;
+    font-size: 1.3rem;
+    padding: 1rem 8rem;
+    color: black;
+    background: white;
+    border: 2px solid black;
+}
+/**************************
+First-Section Class
+*************************/
+.first-section{
+    margin-top: 5rem;
+}
+.top-section-block{
+    color: white;
+    font-size: 1.2rem; /*1*/
+    padding-left: 1rem; /*1*/
+    margin-top: -28rem;
+}
+#fsREADMORE{
+    color: white;
+    background-color: #b08444;
+    border: 2px solid #b08444;
+    padding: 1rem;
+    margin-right: 1rem;
+}
+#fsREADMORE:hover{
+    color: #b08444;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+#fsBUYETALON{
+    color: #b08444;
+    background-color: white;
+    border: 2px solid white;
+    padding: 1rem;
+    margin-right: 1rem;
+}
+#fsBUYETALON:hover{
+    color: white;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.top-section-block button{
+    margin-top: 1rem;
+}
+/**************************
+Second-Section Class
+*************************/
+.second-section{
+    background: white;
+    color: black;
+    margin-top: 5.1rem; /*1*/
+    text-align: center;
+    padding: 2rem;
+    
+}
+.section-section p{
+    line-height: 2rem;
+}
+.second-section h3{
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#VIEWALLSERVICES{
+    padding: 1rem;
+    color: white;
+    background-color: #b08444;
+    border: 2px solid#b08444;
+    margin-top: 1rem;
+}
+#VIEWALLSERVICES:hover{
+    color: #b08444;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+}
+/**************************
+Video-Section Class
+*************************/
+.video-section{
+    padding: 4rem 0; /*1*/
+}
+.video-textblock{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+}
+.video-textblock p{
+    line-height: 1.5rem; 
+    padding: 1rem 0;  
+}
+.video-textblock h1{ 
+    font-size: 1.5rem; 
+    font-weight: bold;
+}
+#video-GETSTARTED{
+    background-color: #b08444;
+    border: 2px solid #b08444;
+    color: white;
+    margin: 2rem 3rem 0 3rem;
+    padding: 1rem 0.5rem;
+    font-weight: bold;
+}
+#video-GETSTARTED:hover{
+    background-color: transparent;
+    color: #b08444;
+    transition: 0.3s ease-in-out;
+}
+.video-container {
+    position: relative;
+    width: 50%;
+    margin-left: 3rem;
+}
+.video-container img{
+    width: 100%;
+    height: auto;
+    min-width: 20rem;
+    min-height: 13rem;
+}
+.video-container .btn {
+  position: absolute;
+  top: 50%;
+  left: 75%; /*1*/
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #b08444;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25%;
+}
+.video-container .btn:hover {
+   background-color: white;
+   color: #b08444;
+   transition: 0.3s ease-in-out;
+}
+
+/**************************
+Icons-Section Class
+*************************/
+.icons-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+    background-color: white;
+}
+.icons-section > div{
+    display: flex;
+    flex-direction: row;
+    align-items: space-around;
+}
+.icons-section > div > div{
+    display: flex;
+    flex-direction: column;  
+}
+.icons-section img{
+    min-width: 4rem;
+    min-height: 4rem;
+    margin-right: 1.5rem;
+}
+.icons-section span{
+    font-size: 3.5rem;
+    color: #b08444;
+    font-weight: bold;
+}
+.icons-section p{
+    font-size: 1rem;
+    font-weight: bold;
+}
+/**************************
+Services Paragraph Class
+*************************/
+.services{
+    text-align: center;
+    padding: 5rem 1rem;
+    background-size: cover;
+    background-position: 10;
+    background-image: linear-gradient(to bottom, rgba(184, 184, 184, 0.2), rgba(51, 51, 51, 0.7)), url('pictures/barberheader.jpg');
+    color: white;
+    padding-bottom: 10rem;
+}
+.services h1{
+    font-weight: bold;
+}
+.services p{
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+/*******************
+Dropdown Menu-Section
+********************/
+.wrapper{
+    width: 100%;
+    margin: 0;
+}
+.wrapper nav{
+    margin-top: -6.8rem;
+    position: absolute;
+    background: white;
+    
+}
+.wrapper nav > ul{
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+.a{
+    display: block;
+    text-decoration: none;
+    
+}
+.wrapper nav ul li{
+    list-style: none;
+    transition: 0.5s;
+    
+}
+.wrapper nav > ul > li > a{
+    padding: 2rem 6rem;
+    color: black;
+    font-size: 1.2rem;
+    box-shadow: 0 0 0.7px #000;
+    width: 100vw;
+    text-align: center;
+}
+.wrapper nav ul > li.dropdown > a:after{
+    position: relative;
+    float: right;
+    content: '';
+    margin-left: 10px;
+    margin-top: 8px;
+}
+.wrapper nav > ul > li:hover{
+    background: #b08444; 
+}
+.wrapper nav > ul > li > a:hover{
+    color: white;
+}
+.wrapper nav ul.menu-area{
+    padding: 40px 40px 0 40px;
+    background: white;
+    text-align: left;
+    border: 0.5px solid gray;
+    z-index: 1;
+    position: absolute;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    top: -9999px;
+    left: 0;
+}
+#selectOnLoad{
+    top: 100%;
+}
+.wrapper nav ul li:hover ul.menu-area{
+    top: 100%;
+}
+.wrapper nav ul.menu-area ul{
+    width: 49%;
+    margin-bottom: 40px;
+}
+.a div div h4{
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.wrapper nav ul.menu-area ul li.a{
+    display: block;
+}
+.wrapper nav ul.menu-area ul li div{
+    margin-top: 10px;
+}
+.a div{
+    display: flex;
+    flex-direction: column;
+    margin-right: -8rem;
+}
+.a div div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+}
+/*******************
+Skilled Barbers Section
+********************/
+/* "CFTAD" = change for tablet and desktop */
+.skilled-barbers-section{
+    margin-top: 72rem; /*CFTAD*/
+    margin-left: 2rem; /*CFTAD*/
+    margin-right: 2rem;
+}
+.skilled-barbers-section img{
+    min-width: 100%; /*CFTAD*/
+}
+.skilled-barbers-section div{
+    display: flex;
+    flex-direction: column; /*CFTAD*/
+    background-color: white;
+}
+.skilled-barbers-section .skilled-barbers-text{
+    background-color: rgba(242,242,242,255);
+}
+.skilled-barbers-section div section{
+    padding: 2rem; 
+}
+.skilled-barbers-section div section h4,
+.skilled-barbers-section div section p{
+    padding-top: 1rem; /*CFTAD*/
+    line-height: 1.5rem; /*CFTAD*/
+}
+.skilled-barbers-section h4{
+    font-weight: bold; 
+}
+.skilled-barbers-section div{
+    margin-top: 2rem; /*CFTAD*/
+}
+.skilled-barbers-text{
+    text-align: center;
+}
+.skilled-barbers-section h1{
+    font-weight: bold;
+}
+.skilled-barbers-section section div section div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.skilled-barbers-section section div section div.yellow > a img{
+    min-height: 2rem;
+    min-width: 2rem;
+}
+.skilled-barbers-text p{
+    margin-top: 1rem;
+}
+/*******************
+Gallery Section
+********************/
+.gallery-section{
+    background-color: white;
+    margin-top: 5rem;
+
+}
+.gallery-section section{
+    text-align: center;
+    padding: 3rem 1rem;
+}
+.gallery-section h1{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.gallery-section img{ /*CFTAD*/
+    min-width: 100%;
+    min-height: 14rem;
+}
+.gallery-section img:hover{
+    background-image: linear-gradient(to bottom, rgba(184, 184, 184, 0.2),
+    rgba(51, 51, 51, 0.7));
+}
+.gallery-section a{
+    position: relative;
+}
+  
+.gallery-section a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(184, 184, 184, 0.2),
+    rgba(184, 184, 184, 0.2));
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+  
+.gallery-section a:hover::before {
+    opacity: 1;
+}
+/*******************
+Professional Care Section
+********************/
+.professional-care{
+    margin-top: 3rem;
+    text-align: center;
+}
+.professional-care div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem 3rem 3rem 3rem;
+    background-color: white;
+    margin: 1rem 2rem;
+    text-align: center;
+}
+.professional-care > h1{
+    font-weight: bold;
+}
+.professional-care > p{
+    padding: 1rem 2rem;
+}
+.professional-care img{
+    min-width: 70vw;
+    min-height: 17rem;
+}
+.professional-care div span{
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+}
+.professional-care div span + span{
+    margin-bottom: 2rem;
+}
+.professional-care div:hover span{
+    color: #b08444;
+}
+#profcarebutton{
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    padding: 1rem 2rem;
+    background-color: #b08444;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+#profcarebutton:hover{
+    background-color: #FFF;
+    border: 3px solid #b08444;
+    color: #b08444;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.professional-care section div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+/*******************
+User Reviews Section
+********************/
+.testimonials{
+    background-image: linear-gradient(to bottom, rgba(97, 97, 97, 0.2),
+    rgba(27, 27, 27, 0.7)), url('pictures/backgroundforreviews.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 0rem;
+    margin-top: 10rem;
+}
+.testimonials section h1{
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+}
+.testimonials > section{
+    padding-top: 6rem;
+    color: white;
+    font-size: 1.5rem;
+}
+.container-flex{
+    margin-top: -10rem;
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.review-container{
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    padding-bottom: 40px;
+    overflow: hidden;
+
+}
+.review-wrapper{
+    width: 500%; /*change +100 depending on card #'s*/
+    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+    
+}
+.card{
+    width: 800px;
+    min-height: 100%;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0 10px;
+    border: 5px solid #b08444;
+}
+.card-thumb{
+    width: 70%;
+    height: 250px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+    color: black;
+    font-weight: bold;
+}
+.client-img{
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    border: 5px solid #b08444;
+}
+.client-name{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 5px 20px;
+    background-color:  #fff;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.card-body{
+    width: 120%;
+    min-height: 100%;
+    height: auto;
+    margin-left: 20px;
+    position: relative;
+    padding-bottom: 50px;
+}
+.review{
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 30px;
+}
+.rating{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.star{
+    width: 25px;
+    margin-right: 5px;
+}
+.indicators{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.indicators button{
+    background: none;
+    border: none;
+    outline: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-left: 5px;
+    transition: 0.5s;
+}
+button.active{
+    width: 40px;
+    border-radius: 50px;
+    background: #FFF;
+}
+/*****************************
+BOOK APPOINTMENT SECTION
+******************************/
+.bookappointment{
+    background: white;
+    color: black;
+    text-align: center;
+    padding: 2rem;
+    
+}
+.bookappointment p{
+    line-height: 2rem;
+}
+.bookappointment h3{
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.bookappointment button{
+    padding: 1rem 3rem;
+    color: white;
+    background-color: #b08444;
+    border: 2px solid#b08444;
+    height: 5rem;
+    white-space: nowrap;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+.bookappointment button:hover{
+    color: #b08444;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+}
+/*****************************
+CONTACT AND HOURS SECTION
+******************************/
+/*hac = hours and contact*/
+.hac-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 1rem;
+    padding: 5rem;
+    background-color: #b08444;
+    color: white;
+    white-space: nowrap;
+}
+.hac-container section > span{
+    font-size: 1.2rem;
+}
+.hac-container section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.hac-container img{
+    margin-left: -3rem;
+    margin-right: 1rem;
+}
+.openinghours{
+    margin-left: -2rem;
+    text-align: center;
+}
+.openinghours div{
+    display: flex;
+    gap: 2rem;
+    border-bottom: 1px solid rgb(189, 189, 189);
+    padding-bottom: 1rem;
+}
+.openinghours h6{
+    font-size: 1rem;
+}
+.openinghours div span{
+    text-align: right;
+}
+.contactandhours > iframe{
+    width: 100%;
+    height: 600px;
+}
+/*****************************
+FOOTER
+******************************/
+footer{
+    background: rgb(27, 27, 27);
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+footer ul{
+    list-style-type: none;
+    margin: 1rem 0;
+    line-height: 2rem;
+}
+footer a, footer p{
+    text-decoration: none;
+    color: gray;
+}
+.footer-contact{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background: rgb(20, 20, 20);
+    padding: 1rem;
+    padding-bottom: 3rem;
+}
+.footer-contact section{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-top: 2rem;
+}
+.footer-contact  div{
+    display: flex;
+    flex-direction: column;
+}
+.footer-TOC{
+    padding: 3.5rem;
+}
+footer h6{
+    font-size: 1.5rem;
+}
+.policyandrights{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: rgb(20, 20, 20);
+}
+.policyandrights span{
+    padding-bottom: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*******************
+    MOBILE
+********************/
+@media (min-width: 280px){
+    /***********************
+    HAMBURGER MENU SECTION
+    ************************/
+    .nav-menu button{
+        padding: 1rem 5.5rem;
+        font-size: 0.8rem;
+    }
+    /***********************
+    SECOND+THIRD SECTION
+    ************************/
+    .top-section-block{
+        font-size: 0.8rem;
+    }
+    #fsREADMORE, #fsBUYETALON{
+        padding: 0.5rem;
+    }
+    .second-section{
+        margin-top: 1rem; 
+    }
+    /***********************
+    VIDEO SECTION
+    ************************/
+    .video-container{
+        margin-left: 1.25rem;
+    }
+    .video-container img{
+        min-width: 15rem;
+        min-height: 10rem;
+    }
+    .video-container .btn {
+        left: 85%; /*1*/
+    }
+    /***********************
+    SKILLED BARBERS SECTION
+    ************************/
+    .skilled-barbers-section img{
+        min-height: 18rem; 
+    }
+    .skilled-barbers-text h1{
+        font-size: 2rem;
+    }
+    /***********************
+    PROFESSIONAL CARE SECTION
+    ************************/
+    .professional-care img{
+        min-height: 14rem;
+    }
+    
+    
+}
+
+@media (min-width: 320px){
+    /***********************
+    HAMBURGER MENU SECTION
+    ************************/
+    .nav-menu button{
+        padding: 1rem 5.5rem;
+        font-size: 0.8rem;
+    }
+    /***********************
+    SECOND+THIRD SECTION
+    ************************/
+    .top-section-block{
+        font-size: 0.8rem;
+    }
+    #fsREADMORE, #fsBUYETALON{
+        padding: 0.5rem;
+    }
+    .second-section{
+        margin-top: 1rem; 
+    }
+    /***********************
+    VIDEO SECTION
+    ************************/
+    .video-container{
+        margin-left: 1.25rem;
+    }
+    .video-container img{
+        min-width: 17rem;
+        min-height: 10rem;
+    }
+    .video-container .btn {
+        left: 85%; /*1*/
+    }
+    /***********************
+    PROFESSIONAL CARE SECTION
+    ************************/
+    .professional-care img{
+        min-height: 17rem;
+    }
+    /***********************
+    TESTIMONIALS SECTION
+    ************************/
+    .testimonials > section{
+        padding: 6rem 1rem 0 1rem;
+    }
+    .container-flex{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+}
+@media(min-width: 321px){
+    /***********************
+    HAMBURGER + FIRST + SECOND SECTION
+    ************************/
+    #fsREADMORE, #fsBUYETALON{
+        padding: 1rem;
+    }
+    .nav-menu button{
+        padding: 1rem 6.5rem;
+    }
+    .second-section{
+        margin-top: 1rem; 
+    }
+    /***********************
+    VIDEOE SECTION
+    ************************/
+    .video-container{
+        margin-left: 2rem;
+    }
+    .video-container img{
+        min-width: 19rem;
+        min-height: 10rem;
+    }
+    .video-container .btn {
+        left: 85%; /*1*/
+    }
+    /***********************
+    SKILLED BARBERS SECTION
+    ************************/
+    .skilled-barbers-section img{
+        min-height: 23rem; 
+    }
+}
+@media(min-width: 390px){
+    /***********************
+    VIDEO SECTION
+    ************************/
+    .video-container{
+        margin-left: 2.5rem;
+    }
+    .video-container .btn {
+        left: 80%; /*1*/
+    }
+    /***********************
+    GALLERY SECTION
+    ************************/
+    .a div{
+        margin-right: -10rem;
+    }
+}
+@media(min-width: 412px){
+    /***********************
+    VIDEO SECTION
+    ************************/
+    .video-container{
+        margin-left: 3.5rem;
+    }
+    .video-container .btn {
+        left: 75%; /*1*/
+    }
+    /***********************
+    SKILLED BARBERS SECTION
+    ************************/
+    .skilled-barbers-section img{
+        min-height: 26rem; 
+    }
+    /***********************
+    GALLERY SECTION
+    ************************/
+    .gallery-section img{ 
+        min-height: 16rem;
+    }
+}
+@media (min-width: 414px){
+    /***********************
+    VIDEO SECTION
+    ************************/
+    .video-container{
+        margin-left: 3.5rem;
+    }
+    .video-container .btn {
+        left: 75%; /*1*/
+    }
+    .container-flex{
+        margin-top: 1rem;  
+    }
+}
+
+@media (min-width: 540px){
+    .top-section-block{
+        margin-top: -23rem;
+    }
+    .nav-menu button{
+        padding: 1rem 12.5rem;
+    }
+    .video-container{
+        margin-left: 7rem;
+    }
+    .video-container img{
+        min-width: 20rem;
+        min-height: 10rem;
+    }
+    .video-container .btn {
+        left: 60%; 
+    }
+    .skilled-barbers-section{
+        margin-top: 64rem;
+    }
+    .skilled-barbers-section img{
+        min-height: 35rem;
+    }
+    .gallery-section img{ 
+        min-height: 21rem;
+    }
+    /*******************
+    Professional Care Section
+    ********************/
+    .professional-care img{
+        min-width: 70vw;
+        min-height: 23rem;
+    }
+
+}
+
+
+
+/*******************
+    TABLETS
+********************/
+@media (min-width: 768px){
+    /*******************
+    HEADER
+    ********************/
+    header a{
+        font-size: 1.7rem;
+    }
+    .nav-menu{
+        align-items: flex-start;
+        width: 50%;
+    }
+    .nav-menu button{
+        font-size: 0.7rem;
+    }
+    .DFT{
+        display: block;
+    }
+    .nav-menu button{
+        padding: 1rem 9rem;
+    }
+    /*******************
+    First-Section
+    ********************/
+    .first-section{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        
+    }
+    #topPreviousButton, #topNextButton{
+        margin-top: -23rem;
+        margin-bottom: 23rem;
+    }
+    #topPreviousButton:hover, #topNextButton:hover{
+        background-color: black;
+        transition: 0.7s ease-in-out;
+    }
+    .top-section-block h1{
+        font-size: 3rem;
+    }
+    .top-section-block p{
+        font-size: 1.5rem;
+    }
+    /*******************
+    Second-Section
+    ********************/
+    .second-section{
+        margin-top: -2rem; 
+    }
+    /**************************
+    Video-Section Class
+    *************************/
+    .video-section{
+        display: flex;
+    }
+    .video-container{
+        margin-top: 4rem;
+        margin-right: 1.5rem;
+    }
+    .video-container img{
+        min-width: 20rem;
+        min-height: 12rem;
+    }
+    .video-container .btn {
+        left: 50%; /*1*/
+        top: 20%;
+    }
+    .video-textblock h1{ 
+        font-size: 2rem;
+    }
+    /**************************
+    Icon-Section Class
+    *************************/
+    .icons-section{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .icons-section > div{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .a div{
+        margin-right: 4.3rem;
+        margin-left: 1rem;
+    }
+    .wrapper nav ul.menu-area{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    /*******************
+    Skilled Barbers Section
+    ********************/
+    .skilled-barbers-section{
+        margin-top: 47rem;
+    }
+    .skilled-barbers-section > section{
+        display: flex;
+    }
+    .skilled-barbers-section img{
+        min-height: 27rem;
+    }
+    .skilled-barbers-section div{
+        margin-top: 4rem; 
+    }
+    .skilled-barbers-left{
+        margin-right: 2rem;
+    }
+    .skilled-barbers-text{
+        padding: 0 7rem;
+    }
+    .skilled-barbers-text h1{
+        font-size: 3rem;
+    }
+    /*******************
+    Gallery Section
+    ********************/
+    .gallery-top, .gallery-bottom{
+        display: flex;
+        flex: 1;
+        gap: 0.3rem;
+    }
+    .gallery-section img{ 
+        min-height: 15vh;
+        min-width: 33vw
+    }
+    .professional-care section div span{
+        font-size: 2rem;
+    }
+    .professional-care img{
+        min-height: 35rem;
+    }
+    /*****************************
+    CONTACT AND HOURS SECTION
+    ******************************/
+    .hac-container section > span{
+        margin-left: -2rem;
+    }
+    .hac-container img{
+        margin-left: -2rem;
+    }
+    .openinghours{
+        text-align: left;
+    }
+    .contactandhours section.openinghours > span{
+        margin-left: 0rem;
+    }
+    
+}
+@media(max-width: 800px){
+    .container{
+        width: 50%;
+        margin: auto;
+    }
+    .card{
+        flex-direction: column;
+    }
+    .card-thumb{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .card-body{
+        width: 100%;
+        min-height: auto;
+        margin-left: 0;
+    }
+}
+@media (min-width: 820px){
+    .video-container .btn {
+        top: 25%;
+    }
+    .container-flex{
+        margin-top: -15rem;
+        margin-bottom: 0rem;
+    }
+}
+@media (min-width: 912px){
+    .video-container .btn {
+        top: 30%;
+    }
+    .skilled-barbers-section img{
+        min-height: 31rem;
+    }
+    .container-flex{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    .review-container{
+        position: relative;
+        width: 800px;
+        min-width: 350px;
+        min-height: 250px;
+        padding-bottom: 40px;
+        overflow: hidden;
+    }
+}
+
+
+
+
+/*******************
+    DESKTOP
+********************/
+@media (min-width: 1024px){
+    .HFM{
+        display: block;
+    }
+    .HFD{
+        display: none;
+    }
+    .DFD{
+        display: block;
+    }
+    /*******************
+    HEADER
+    ********************/
+    header{
+        padding-bottom: 37rem;
+        background-size: cover;
+        background-position: 0;
+        background-image: linear-gradient(to bottom, rgba(184, 184, 184, 0.2),
+         rgba(51, 51, 51, 0.7)), url('pictures/barberheader.jpg');
+    }
+    .hamburger{
+        display: none;
+    }
+    .header-top{
+        display: flex;
+        justify-content: center;
+        padding-top: 0.5rem;
+        padding-bottom: 0.8rem;
+        border-bottom: 1px solid rgb(207, 207, 207);
+    }
+    .header-top ul{
+        display: flex;
+        color: white;
+        font-size: 1rem;
+    }
+    .header-address ul{
+        gap: 2rem;
+        margin-right: 4rem;
+    }
+    .header-socials ul{
+        gap: 1.5rem;
+    }
+    .header-address img{
+        margin-right: 1rem;
+        padding-top: 0.3rem;
+    }
+    /*******************
+    Table of Contents - HEADER
+    ********************/
+    .desktop-header-toc{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 2rem;
+    }
+    .desktop-toc{
+        display: flex;
+    }
+    .desktop-toc li{
+        padding: 0 1rem;
+    }
+    .desktop-toc a, .desktop-header-toc span{
+        color: white;
+    }
+    .desktop-toc a{
+        font-size: 1.2rem;
+    }
+    .desktop-header-toc span{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    #header-booking-button{
+        padding: 0.2rem 1rem;
+        font-size: 1.2rem;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+    }
+    #header-booking-button:hover{
+        transition: 0.3s ease-in-out;
+        background-color: #b08444;
+        border-color: #b08444;
+        cursor: pointer;
+    }
+    .desktop-header-toc a:hover{
+        padding-bottom: 1rem;
+        border-bottom: 2px solid #b08444;
+    }
+    /*******************
+    First-Section
+    ********************/
+    .first-section{
+        margin-top: 0rem;
+    }
+    .top-section-block{
+        margin-top: -30rem;
+        padding-left: 15rem;
+        margin-right: -20rem;
+    }
+    .top-section-block h1{
+        font-size: 3rem;
+    }
+    .top-section-block p{
+        font-size: 1.5rem;
+    }
+    #fsREADMORE, #fsBUYETALON{
+        padding: 1rem;
+        margin-right: 1rem;
+        font-size: 1.1rem;
+    }
+    #topPreviousButton, #topNextButton{
+        color: white;
+        text-decoration: none;
+        background-color: #b08444;
+        padding: 1rem;  
+    }
+    #topPreviousButton{
+        margin-left: 2rem;
+    }
+    #topNextButton{
+        margin-left: 25rem;
+    }
+    /*******************
+    Second-Section
+    ********************/
+    .second-section{
+         display: flex;
+         text-align: left;
+         justify-content: space-between;
+         padding-left:  21rem;
+         padding-right:  21rem;
+         margin-top: -3rem;
+    }
+    .second-section h3{
+        font-size: 2rem;
+    }
+    /**************************
+    Second-Section Class
+    *************************/
+    .second-section{
+        background: white;
+        color: black;
+        text-align: center;
+        padding: 2rem;
+        justify-content: space-around;
+    }
+    .section-section p{
+        line-height: 2rem;
+    }
+    .second-section div{
+        text-align: left;
+    }
+    .second-section h3{
+        padding-bottom: 1rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    #VIEWALLSERVICES{
+        padding: 1rem;
+        color: white;
+        background-color: #b08444;
+        border: 2px solid#b08444;
+    }
+    /*******************
+    Video-Section
+    ********************/
+    .video-section{
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .video-textblock{
+        text-align: left;
+        margin: 0 5rem;
+    }
+    .video-container img{
+        margin-left: -10rem;
+        margin-top: -2rem;
+    }
+    #video-GETSTARTED{
+        margin-left: 0rem;
+    }
+    .video-container .btn{
+        top: 20%;
+        left: 5%
+    }
+    .video-textblock h1{ 
+        font-size: 2.5rem;
+    }
+    /*******************
+    Dropdown Menu-Section
+    ********************/
+    .wrapper{
+        width: 100vw;
+        margin: 20px auto;
+    }
+    .wrapper nav > ul{
+        flex-direction: row;
+        justify-content: center;
+        width: 100vw;
+    }
+    .wrapper nav > ul > li > a{
+        width: 25vw; /*this is causing scroll left/right*/
+    }
+    .wrapper nav ul.menu-area{
+        flex-direction: row;
+    }
+    /*******************
+    Skilled Barbers Section
+    ********************/
+    .skilled-barbers-section{
+        margin-top: 30rem;
+    }
+    .skilled-barbers-section section > div{
+        display: flex;
+        flex-direction: row;
+    }
+    .skilled-barbers-section img{
+        min-height: 20rem;
+    }
+    .skilled-barbers-section img{
+        min-width: 50%; 
+    }
+    .skilled-barbers-section section{
+        display: flex;
+        flex-direction: row; 
+    }
+    .skilled-barbers-section section div > section{
+        display: flex;
+        flex-direction: column;
+    }
+    .skilled-barbers-section .skilled-barbers-text{
+        margin-bottom: 4rem;
+    }
+    .skilled-barbers-section section div section div{
+        margin-top: 1rem;
+    }
+    /*******************
+    Gallery Section
+    ********************/
+    .gallery-section img{ 
+        min-height: 37vh;
+        min-width: 33vw
+    }
+    /*******************
+    Professional Care Section
+    ********************/
+    
+    .professional-care div{
+        padding: 1rem;
+        background-color: white;
+        margin: 1rem;
+        text-align: center;
+        flex: 1;
+    }
+    .professional-care section div span{
+        font-size: 1rem;
+    }
+    .top-careitems, .bottom-careitems{
+        display: flex;
+    }
+    .professional-care > h1{
+        font-weight: bold;
+    }
+    .professional-care > p{
+        padding: 1rem 2rem;
+    }
+    .professional-care img{
+        min-width: 10rem;
+        min-height: 10rem;
+    }
+    /*****************************
+    CONTACT AND HOURS SECTION
+    ******************************/
+    /*hac = hours and contact*/
+    .contactandhours{
+        margin-top: 0rem;
+    }
+    .contactandhours iframe{
+        margin-top: -37rem;
+        z-index: -1;
+        position: relative;
+    }
+    .hac-container{
+        width: 40%;
+        z-index: 1;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    /*****************************
+    FOOTER
+    ******************************/
+    footer ul{
+        margin: 1rem 0;
+        line-height: 2rem;
+    }
+    .footer-contact{
+        padding-left: 7rem;
+        padding-right: 7rem;
+        display: flex;
+        gap: 3rem;
+    }
+    .footer-contact section{
+        flex-direction: row;
+    }
+    .footer-contact  div{
+        flex-direction: column;
+    }
+    .footer-TOC{
+        display: flex;
+        justify-content: space-around;
+        padding: 3.5rem;
+    }
+    .footer-TOC ul{
+        flex: 1;
+        padding: 0;
+        margin: 0;
+    }
+    .footer-TOC ul li{
+        margin-bottom: 10px;
+    }
+    
+    footer h6{
+        margin-top: 0;
+        font-size: 1rem;
+    }
+    .policyandrights{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+   
+
+    
+    
+    
+    
+    
+    
+
+    
+
+}
+
+/*******************
+    LAPTOP+
+********************/
+@media (min-width: 1280px){
+    .video-container .btn {
+        left: 5%; /*1*/
+        top: 20%;
+    }
+    #video-GETSTARTED{
+        margin-right: 10rem;
+    }
+    .icons-section{
+        flex-direction: row;
+    }
+    .icons-section > div{
+        flex-direction: row;
+        align-items: space-around;
+    }
+    .skilled-barbers-section img{
+        min-width: 45%; /*CFTAD*/
+    }
+    .container-flex{
+        margin-top: 0rem;
+    }
+    /******************************
+    BOOK APPOINTMENT SECTION
+    ******************************/
+    .bookappointment{
+        display: flex;
+        justify-content: space-around;
+        text-align: left;
+    }
+    /*****************************
+    CONTACT AND HOURS SECTION
+    ******************************/
+    .hac-container{
+        width: 30%;
+    }
+    .footer-contact{
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+    .footer-TOC{
+        margin-left: 4rem;
+    }
+    
+}
+@media (min-width:1440px){
+    #topNextButton{
+        margin-left: 50rem;
+        margin-right: 2rem;
+    }
+    .second-section{
+        margin-top: -3rem; 
+    }
+    /*******************
+    Video Section
+    ********************/
+    .video-container .btn {
+        left: 15%; 
+        top: 40%;
+    }
+    .video-container img{
+        min-width: 25rem;
+        min-height: 15rem;
+    }
+    #video-GETSTARTED{
+        margin-right: 25rem;
+    }
+    /*******************
+    Menu Section
+    ********************/
+    .wrapper{
+        width: 1170px;
+        margin: 20px auto;
+    }
+    .wrapper nav > ul{
+        flex-direction: row;
+        justify-content: center;
+        width: 1170px;
+    }
+    .wrapper nav > ul > li > a{
+        width: 100%;
+    }
+    /*******************
+    Skilled Barbers Section
+    ********************/
+    .skilled-barbers-section img{
+        min-width: 35%;
+        min-height: 20rem; 
+    }
+    .skilled-barbers-section section div section div{
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+    .skilled-barbers-section > section{
+        margin: -4rem 10rem 0 10rem;
+    }
+    /*******************
+    Gallery Section
+    ********************/
+    .gallery-section img{ 
+        min-height: 40vh;
+    }
+    /*******************
+    Professional-Care Section
+    ********************/
+    .professional-care{
+        margin-left: 15rem;
+        margin-right: 15rem;
+    }
+    .professional-care img{
+        min-width: 14rem;
+        min-height: 15rem;
+    }
+    .container-flex{
+        margin-top: -10rem;
+        margin-bottom: -10rem;
+    }
+    /*****************************
+    CONTACT AND HOURS SECTION
+    ******************************/
+    .hac-container{
+        width: 20%;
+    }
+    .footer-contact{
+        margin-left: 25rem;
+        margin-right: 25rem;
+    }
+    .footer-TOC{
+        margin-left: 15rem;
+    }
+}
+@media (min-width: 1650px){
+    .video-container img{
+        min-width: 35rem;
+        min-height: 20rem;
+    }
+    .video-container .btn {
+        left: 21%; 
+        top: 37%;
+    }
+    #video-GETSTARTED{
+        margin-right: 0rem;
+    }
+    .video-textblock{
+        margin: 0 15rem;
+    }
+    .video-container img{
+        margin-right: 15rem;
+    }
+}

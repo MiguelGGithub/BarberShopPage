@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <nav class="header-address HFM">
+                <ul>
+                    <li><img src="pictures/locationwhite.png">49 Grand Street, Los Angeles</li>
+                    <li><img src="pictures/phonewhite.png">(222)400-630</li>
+                    <li><img src="pictures/mailwhite.png">contact@etalon-theme.com</li>
+                </ul>
+            </nav>
+            <nav class="header-socials HFM">
+                <ul>
+                    <li><img src="pictures/facebook.png"></li>
+                    <li><img src="pictures/twitter.png"></li>
+                    <li><img src="pictures/google-plus.png"></li>
+                    <li><img src="pictures/youtube.png"></li>
+                    <li><img src="pictures/linkedin.png"></li>
+                    <li><img src="pictures/instagram.png"></li>
+                </ul>
+            </nav>
+        </div>
+        <!--Mobile Hamburger Menu-->
+        <nav class="navbar HFD">
+            <span>ETALON</span>
+            <ul class="nav-menu"> <!--top-toc-list removed-->
+                <li class="nav-item"><a href="" class="nav-link">HOME</a></li>
+                <li class="nav-item"><a href="" class="nav-link">ABOUT US</a></li>
+                <li class="nav-item"><a href="" class="nav-link">SERVICES</a></li>
+                <li class="nav-item"><a href="" class="nav-link">BLOG</a></li>
+                <li class="nav-item"><a href="" class="nav-link">PAGES</a></li>
+                <li class="nav-item"><a href="" class="nav-link">SHOP</a></li>
+                <li class="nav-item"><a href="" class="nav-link">CONTACT</a></li>
+                <li class="nav-item"><img src="" class="nav-link"><a href=""></a></li>
+                <li class="nav-item"><button>BOOKING</button></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <!--Desktop Version of TOC (Table of Contents)-->
+        <nav class="desktop-header-toc HFM">
+            <span>ETALON</span>
+            <ul class="desktop-toc">
+                <li class=""><a href="">HOME</a></li>
+                <li class=""><a href="">ABOUT US</a></li>
+                <li class=""><a href="">SERVICES</a></li>
+                <li class=""><a href="">BLOG</a></li>
+                <li class=""><a href="">PAGES</a></li>
+                <li class=""><a href="">SHOP</a></li>
+                <li class=""><a href="">CONTACT</a></li>
+                <li class=""><img src="pictures/shoppingbag.png"><a href=""></a></li>
+                <li class=""><button id="header-booking-button">BOOKING</button></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <div class="first-section" >
+        <a href="" class="HFM DFD" id="topPreviousButton">&#10094;</a>
+        <div class="top-section-block">
+            <h1>Experience the traditional <br class="HFM"> barbershop feel</h1>
+            <p class="HFM DFT">Professional care to maintain your perfect look</p>
+            <button id="fsREADMORE">READ MORE</button><button id="fsBUYETALON">BUY ETALON</button>
+        </div>
+        <a href="" class="HFM DFD test" id="topNextButton">&#10095;</a>
+
+        <!-- <div class="button-wrapper">
+            <button class="slideshow-dot"></button>
+            <button class="slideshow-dot"></button>
+        </div> -->
+    </div>
+
+    <div class="second-section">
+        <div>
+            <h3>Book an appointment today</h3>
+            <p>Booking an appointment online is the quickest and easiest way to schedule.</p>
+        </div>
+        <button id="VIEWALLSERVICES">VIEW ALL SERVICES</button>
+    </div>
+ 
+    <div class="video-section">
+        <div class="video-textblock">
+            <h1>Experience the traditional <br> barbershop look and feel</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam maiores, 
+                et saepe asperiores laboriosam voluptatibus molestiae 
+                necessitatibus praesentium blanditiis eos dolorum tenetur in. Totam ex ut sed, optio fugiat dolorem.
+            </p>
+            <button id="video-GETSTARTED">GET STARTED</button>
+        </div>
+        <div class="video-container">
+            <img src="pictures/barbershopimage.jpg">
+            <button class="btn">&#9654;</button>
+        </div>
+        
+    </div>
+
+    <div class="icons-section">
+        <div>
+            <img src="pictures/scissors.png">
+            <div>
+                <span>20</span>
+                <p>SKILLED BARBERS</p>
+            </div>
+        </div>
+        <div>
+            <img src="pictures/sunglasses.png">
+            <div>
+                <span>120</span>
+                <p>HAPPY CLIENTS</p>
+            </div>
+        </div>
+        <div>
+            <img src="pictures/man.png">
+            <div>
+                <span>230</span>
+                <p>CUSTOM HAIRCUTS</p>
+            </div>
+        </div>
+        <div>
+            <img src="pictures/mustache.png">
+            <div>
+                <span>15</span>
+                <p>YEARS EXPERIENCE</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="services">
+        <h1>Services</h1>
+        <p>Combining traditional techniques with modern styles, providing cut,<br> color, and shave services</p>
+    </div>
+
+    <!--Rename after done with tutorial-->
+    <div class="wrapper">
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="" class="a">HAIRCUT</a>
+                    <ul class="menu-area" id="selectOnLoad">
+                        <ul class="servicesLeftList">
+                            <li class="a">
+                                <div> 
+                                    <div>
+                                        <h4>Classic haircut</h4>
+                                        <span>$7.50</span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maxime, 
+                                        architecto</p>
+                                </div>
+                            </li>
+                            <li class="a">
+                                <div> 
+                                    <div>
+                                        <h4>Haircut and Shampoo</h4>
+                                        <span>$9.00</span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maxime, 
+                                        architecto</p>
+                                </div>
+                            </li>
+                            <li class="a">
+                                <div> 
+                                    <div>
+                                        <h4>Beard and Mustache</h4>
+                                        <span>$6.75</span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maxime, 
+                                        architecto</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <!--Right List-->
+                        <ul class="servicesRightList">
+                            <li class="a">
+                                <div> 
+                                    <div>
+                                        <h4>Head Massage</h4>
+                                        <span>$4.50</span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maxime, 
+                                        architecto</p>
+                                </div>
+                            </li>
+                            <li class="a">
+                                <div> 
+                                    <div>
+                                        <h4>Haircut Treatment</h4>
+                                        <span>$6.75</span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maxime, 
+                                        architecto</p>
+                                </div>
+                            </li>
+                            <li class="a">
+                                <div> 
+                                    <div>
+                                        <h4>Beard Trimming</h4>
+                                        <span>$6.75</span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maxime, 
+                                        architecto</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="" class="a">SHAVING</a>
+                    <ul class="menu-area">
+                        <ul class="servicesLeftList">
+                            <li class="a">
+                                <div> 
+                                    <div>
+                                        <h4>Shave</h4>
+                                        <span>$7.50</span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maxime, 
+                                        architecto</p>
+                                </div>
+                            </li>
+                            <li class="a">
+                                <div> 
+                                    <div>
+                                        <h4>Shave and Trim</h4>
+                                        <span>$9.00</span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maxime, 
+                                        architecto</p>
+                                </div>
+                            </li>
+                            <li class="a">
+                                <div> 
+                                    <div>
+                                        <h4>Beard and Mustache</h4>
+                                        <span>$6.75</span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maxime, 
+                                        architecto</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <!--Right List-->
+                        <ul class="servicesRightList">
+                            <li class="a">
+                                <div> 
+                                    <div>
+                                        <h4>Beard Grooming</h4>
+                                        <span>$4.50</span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maxime, 
+                                        architecto</p>
+                                </div>
+                            </li>
+                            <li class="a">
+                                <div> 
+                                    <div>
+                                        <h4>Beard Treatment</h4>
+                                        <span>$6.75</span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maxime, 
+                                        architecto</p>
+                                </div>
+                            </li>
+                            <li class="a">
+                                <div> 
+                                    <div>
+                                        <h4>Beard Dyeing</h4>
+                                        <span>$6.75</span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maxime, 
+                                        architecto</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="" class="a">TRIMMING</a>
+                    <ul class="menu-area">
+                        <ul class="servicesLeftList">
+                            <li class="a">
+                                <div> 
+                                    <div>
+                                        <h4>Classic Trim</h4>
+                                        <span>$7.50</span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maxime, 
+                                        architecto</p>
+                                </div>
+                            </li>
+                            <li class="a">
+                                <div> 
+                                    <div>
+                                        <h4>Trim and Fade</h4>
+                                        <span>$9.00</span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maxime, 
+                                        architecto</p>
+                                </div>
+                            </li>
+                            <li class="a">
+                                <div> 
+                                    <div>
+                                        <h4>Taper</h4>
+                                        <span>$6.75</span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maxime, 
+                                        architecto</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <!--Right List-->
+                        <ul class="servicesRightList">
+                            <li class="a">
+                                <div> 
+                                    <div>
+                                        <h4>Head Massage</h4>
+                                        <span>$4.50</span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maxime, 
+                                        architecto</p>
+                                </div>
+                            </li>
+                            <li class="a">
+                                <div> 
+                                    <div>
+                                        <h4>Block Cut</h4>
+                                        <span>$6.75</span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maxime, 
+                                        architecto</p>
+                                </div>
+                            </li>
+                            <li class="a">
+                                <div> 
+                                    <div>
+                                        <h4>Wolf Cut</h4>
+                                        <span>$6.75</span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maxime, 
+                                        architecto</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="" class="a">HAIRSTYLING</a>
+                    <ul class="menu-area">
+                        <ul class="servicesLeftList">
+                            <li class="a">
+                                <div> 
+                                    <div>
+                                        <h4>Wolf Cut</h4>
+                                        <span>$7.50</span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maxime, 
+                                        architecto</p>
+                                </div>
+                            </li>
+                            <li class="a">
+                                <div> 
+                                    <div>
+                                        <h4>Two-Part</h4>
+                                        <span>$9.00</span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maxime, 
+                                        architecto</p>
+                                </div>
+                            </li>
+                            <li class="a">
+                                <div> 
+                                    <div>
+                                        <h4>Wavy</h4>
+                                        <span>$6.75</span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maxime, 
+                                        architecto</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <!--Right List-->
+                        <ul class="servicesRightList">
+                            <li class="a">
+                                <div> 
+                                    <div>
+                                        <h4>Fro</h4>
+                                        <span>$4.50</span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maxime, 
+                                        architecto</p>
+                                </div>
+                            </li>
+                            <li class="a">
+                                <div> 
+                                    <div>
+                                        <h4>Frizz</h4>
+                                        <span>$6.75</span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maxime, 
+                                        architecto</p>
+                                </div>
+                            </li>
+                            <li class="a">
+                                <div> 
+                                    <div>
+                                        <h4>Perm</h4>
+                                        <span>$6.75</span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maxime, 
+                                        architecto</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="skilled-barbers-section">
+        <div class="skilled-barbers-text">
+            <h1>Our Skilled Barbers</h1>
+            <p>Combining traditional techniques with modern styles, providing cut,<br> color, and shave services</p>
+        </div>
+        <section>
+            <div class="skilled-barbers-left">
+                <img src="pictures/barber1.jpg">
+                <section>
+                    <h4>NEAL LEYTON</h4>
+                    <span class="hi">MASTER BARBER</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Minus dolorum sit placeat veniam asperiores </p>
+                    <div class="yellow">
+                        <a href=""><img src="pictures/facebookb.png"></a>
+                        <a href=""><img src="pictures/twitterb.png"></a>
+                        <a href=""><img src="pictures/linkedinb.png"></a>
+                    </div>
+                </section>
+            </div>
+            <div class="skilled-barbers-right">
+                <img src="pictures/barber2.jpg">
+                <section>
+                    <h4>BRUCE SUTTON</h4>
+                    <span>HAIRDRESSER</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Minus dolorum sit placeat veniam asperiores </p>
+                    <div class="yellow">
+                        <a href=""><img src="pictures/facebookb.png"></a>
+                        <a href=""><img src="pictures/twitterb.png"></a>
+                        <a href=""><img src="pictures/linkedinb.png"></a>
+                    </div>    
+                </section>
+            </div>
+        </section>
+    </div>
+
+    <div class="gallery-section">
+        <section>
+            <h1>Gallery</h1>
+            <p>Traditional barbering, providing a comfortable environment for people<br> of all ages</p>
+        </section>
+        <div class="gallery-top">
+            <a class="image-link" href=""><img src="pictures/gallery1.jpg"></a>
+            <a href=""><img src="pictures/gallery2.jpg"></a>
+            <a href=""><img src="pictures/gallery3.jpg"></a>
+        </div>
+        <div class="gallery-bottom">
+            <a href=""><img src="pictures/gallery4.jpg"></a>
+            <a href=""><img src="pictures/gallery5.jpg"></a>
+            <a href=""><img src="pictures/gallery6.jpg"></a>
+        </div>
+    </div>
+
+    <div class="professional-care">
+        <h1>Professional Care</h1>
+        <p>We have a large number of luxurious products designed especially for<br>
+            men. Your barber will advise which are the best for you.
+        </p>
+        <section class="top-careitems">
+            <div>
+                <img src="pictures/itemtwo.jpg">
+                <span>After Shave Cream</span>
+                <span>$29.00</span>
+            </div>
+            <div>
+                <img src="pictures/itemthree.jpg">
+                <span>Barber Comb</span>
+                <span>$20.00</span>
+            </div>
+            <div>
+                <img src="pictures/itemfour.jpg">
+                <span>Coconut Oil</span>
+                <span>$29.00</span>
+            </div>
+            <div>
+                <img src="pictures/itemfive.jpg">
+                <span>Comb Pack</span>
+                <span>$40.00</span>
+            </div>
+        </section>
+        <section class="bottom-careitems">
+            <div>
+                <img src="pictures/itemsix.jpg">
+                <span>Compact Dryer</span>
+                <span>$99.00</span>
+            </div>
+            <div>
+                <img src="pictures/itemseven.jpg">
+                <span>Hair Wax</span>
+                <span>$15.00</span>
+            </div>
+            <div>
+                <img src="pictures/itemeight.jpg">
+                <span>Razor Pack</span>
+                <span>$25.00</span>
+            </div>
+            <div>
+                <img src="pictures/itemone.jpg">
+                <span>Thinning Shear</span>
+                <span>$10.00</span>
+            </div>
+        </section>
+        <button id="profcarebutton">VIEW ALL PRODUCTS +</button>
+    </div>
+    
+    
+    <div class="testimonials">
+        <section>
+            <h1>Testimonials</h1>
+            <p>We are very proud of the service we provide and stand by every product<br>
+                we carry. Read our testimonials from our happy customers.
+            </p>
+        </section>
+        <div class="container-flex">
+            <div class="review-container">
+                <div class="review-wrapper">
+                    <div class="card">
+                        <div class="card-thumb">
+                            <img src="pictures/reviewer2.jpg" alt="" class="client-img">
+                            <span class="client-name">Robert A.</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="review">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Consequatur sed molestias nostrum fuga ullam tenetur tempora libero aut 
+                                sequi minus? Maiores explicabo modi repudiandae voluptatibus?
+                            </p>
+                            <div class="rating">
+                                <img src="pictures/star-fill.png" alt="" class="star">
+                                <img src="pictures/star-fill.png" alt="" class="star">
+                                <img src="pictures/star-fill.png" alt="" class="star">
+                                <img src="pictures/star-fill.png" alt="" class="star">
+                                <img src="pictures/star-no-fill.png" alt="" class="star">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-thumb">
+                            <img src="pictures/reviewer3.jpg" alt="" class="client-img">
+                            <span class="client-name">Robert B.</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="review">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Consequatur sed molestias nostrum fuga ullam tenetur tempora libero aut 
+                                sequi minus? Maiores explicabo modi repudiandae voluptatibus?
+                            </p>
+                            <div class="rating">
+                                <img src="pictures/star-fill.png" alt="" class="star">
+                                <img src="pictures/star-fill.png" alt="" class="star">
+                                <img src="pictures/star-fill.png" alt="" class="star">
+                                <img src="pictures/star-fill.png" alt="" class="star">
+                                <img src="pictures/star-no-fill.png" alt="" class="star">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-thumb">
+                            <img src="pictures/reviewer2.jpg" alt="" class="client-img">
+                            <span class="client-name">Robert C.</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="review">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Consequatur sed molestias nostrum fuga ullam tenetur tempora libero aut 
+                                sequi minus? Maiores explicabo modi repudiandae voluptatibus?
+                            </p>
+                            <div class="rating">
+                                <img src="pictures/star-fill.png" alt="" class="star">
+                                <img src="pictures/star-fill.png" alt="" class="star">
+                                <img src="pictures/star-fill.png" alt="" class="star">
+                                <img src="pictures/star-fill.png" alt="" class="star">
+                                <img src="pictures/star-no-fill.png" alt="" class="star">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-thumb">
+                            <img src="pictures/reviewer3.jpg" alt="" class="client-img">
+                            <span class="client-name">Robert D.</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="review">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Consequatur sed molestias nostrum fuga ullam tenetur tempora libero aut 
+                                sequi minus? Maiores explicabo modi repudiandae voluptatibus?
+                            </p>
+                            <div class="rating">
+                                <img src="pictures/star-fill.png" alt="" class="star">
+                                <img src="pictures/star-fill.png" alt="" class="star">
+                                <img src="pictures/star-fill.png" alt="" class="star">
+                                <img src="pictures/star-fill.png" alt="" class="star">
+                                <img src="pictures/star-fill.png" alt="" class="star">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-thumb">
+                            <img src="pictures/reviewer2.jpg" alt="" class="client-img">
+                            <span class="client-name">Robert E.</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="review">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Consequatur sed molestias nostrum fuga ullam tenetur tempora libero aut 
+                                sequi minus? Maiores explicabo modi repudiandae voluptatibus?
+                            </p>
+                            <div class="rating">
+                                <img src="pictures/star-fill.png" alt="" class="star">
+                                <img src="pictures/star-fill.png" alt="" class="star">
+                                <img src="pictures/star-fill.png" alt="" class="star">
+                                <img src="pictures/star-fill.png" alt="" class="star">
+                                <img src="pictures/star-fill.png" alt="" class="star">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="indicators">
+                    <button class="active"></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bookappointment">
+        <section>
+            <h3>Book an appointment today</h3>
+            <p>Booking an appointment online is the quickest and easiest way to schedule.</p>
+        </section>
+        <button>CONTACT US</button>
+    </div>
+
+    <div class="contactandhours">
+        <div class="hac-container"> <!--hac = hours and contact-->
+            <section class="contactus">
+                <span>HOW TO FIND US</span>
+                <div><img src="pictures/locationwhite.png"><span>49 Grand Street, Los Angeles</span></div>
+                <div><img src="pictures/phonewhite.png"><span>(222)400-630</span></div>
+                <div><img src="pictures/mailwhite.png"><span>contact@etalon-theme.com</span></div>
+            </section>
+            <section class="openinghours">
+                <span>OPENING HOURS</span>
+                <div><h6>Monday-Friday</h6><span>10:00 - 18:00</span></div>
+                <div><h6>Saturday</h6><span>10:00 - 14:00</span></div>
+                <div><h6>Sunday</h6><span>Closed</span></div>
+            </section>
+        </div> 
+        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;
+                height=600&amp;hl=en&amp;q=5835%20Lake%20Worth%20Rd,%20Greenacres,%20FL%2033463+
+            (Barbershop)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+            <a href="https://www.maps.ie/distance-area-calculator.html">area maps</a>
+        </iframe>
+    </div>
+    
+    <footer>
+        <div class="footer-contact">
+            <section>
+                <img src="pictures/locationwhite.png">
+                <div>
+                    <span>ADDRESS</span>
+                    <span>49 Grand Street, Los Angeles</span>
+                </div>
+            </section>
+            <section>
+                <img src="pictures/phonewhite.png">
+                <div>
+                    <span>PHONE</span>
+                    <span>(222)400-630</span>
+                </div>
+            </section>
+            <section>
+                <img src="pictures/mailwhite.png">
+                <div>
+                    <span>EMAIL</span>
+                    <span>contact@etalon-theme.com</span>
+                </div>
+            </section>
+        </div>
+
+        <div class="footer-TOC">
+            <ul class="theme">
+                <li><h6>ETALON THEME</span></h6>
+                <li><p>Lorem ipsum dolor sit amet consectetur, <br>adipisicing elit. 
+                    Ipsum repudiandae dolor<br> nostrum nisi harum error </p></li>
+            </ul>
+            <ul>
+                <li><h6>SERVICES</h6></li>
+                <li><a href="">Haircut and Shampoo</a></li>
+                <li><a href="">Beard and Mustaches</a></li>
+                <li><a href="">Shaving and Trimming</a></li>
+                <li><a href="">Hairstyling</a></li>
+                <li><a href="">Specials</a></li>
+            </ul>
+            <ul>
+                <li><h6>ADDITIONAL LINKS</h6></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Terms and Conditions</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+            <ul>
+                <li><h6>LATEST NEWS</h6></li>
+                <li><a href="">Land Lights Be Divided</a></li>
+                <li><a href="">Seasons Over Bearing Air</a></li>
+                <li><a href="">Signs Likeness for May</a></li>
+                <li><a href="">Greater Open After Grass</a></li>
+                <li><a href="">Gathered Was Divide Second</a></li>
+            </ul>
+        </div>
+
+        <div class="policyandrights">
+            <span>Etalon by KeyDesign. All rights reserved.</span>
+            <a href="">Terms and Conditions</a>
+            <a href="">Privacy Policy</a>
+        </div>
+    </footer>
+
+    <!--JavaScript-->
+    <script src="behavior.js"></script>
+</body>
+</html>
